@@ -139,6 +139,9 @@ header {
   font-size: 13rem;
   color: #8430ea;
   text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.9);
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .hero-content h3 {
   font-family: "Croissant one", sans-serif;
@@ -146,6 +149,9 @@ header {
   color: #8430ea;
   text-align: center;
   margin-bottom: 3rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .hero-btn {
   border: none;
@@ -161,6 +167,11 @@ header {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.9);
   transition: all 0.3s;
   margin-bottom: 5rem;
+  animation-name: moveInBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 .hero-btn:hover {
@@ -194,6 +205,45 @@ header {
   }
 }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* End of Hero */
 
 /* Events Section */
