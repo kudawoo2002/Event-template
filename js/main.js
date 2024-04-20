@@ -37,8 +37,7 @@ function getTime() {
   }
   if (minute >= 59) {
     hour = hour + 1;
-    minute = `00`;
-    minutesEl.textContent = minute;
+
     if (minute < 10) {
       hoursEl.textContent = `0${hour}`;
     } else {
