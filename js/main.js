@@ -35,15 +35,15 @@ function getTime() {
       minutesEl.textContent = minute;
     }
   }
-  if (minute >= 59) {
-    hour = hour + 1;
+  // if (minute >= 59) {
+  //   hour = hour + 1;
 
-    if (minute < 10) {
-      hoursEl.textContent = `0${hour}`;
-    } else {
-      hour.textContent = hour;
-    }
-  }
+  //   if (minute < 10) {
+  //     hoursEl.textContent = `0${hour}`;
+  //   } else {
+  //     hour.textContent = hour;
+  //   }
+  // }
 }
 setInterval(() => {
   getTime();
