@@ -61,7 +61,7 @@ body::-webkit-scrollbar-track {
 /* End of Scrollbar */
 
 /* Navbar */
-header {
+.header-main {
   display: flex;
   position: fixed;
   top: 0;
@@ -320,6 +320,11 @@ event-content-list {
   margin-bottom: 5rem;
 }
 
+.event-register-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .event-register-btn:hover {
   transform: translateY(-0.5rem);
 }
@@ -569,6 +574,137 @@ event-content-list {
   opacity: 0.7;
 }
 /* End of Newsletter */
+
+/* Pricing */
+
+.section-pricing {
+  width: 120rem;
+  padding: 9.6rem 0;
+  margin: auto;
+}
+
+.pricing-plan {
+  border-radius: 1rem;
+  padding: 4.8rem;
+  width: 75%;
+}
+
+.pricing-plan--single {
+  justify-self: end;
+  border: solid 0.1rem #c6bfee;
+}
+
+.pricing-plan--business {
+  background-color: #c6bfee;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--business::after {
+  content: "Best Value";
+  position: absolute;
+  top: 3%;
+  right: -8%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 4rem;
+  transform: rotate(45deg);
+}
+
+.pricing-subheading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3f22e6;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.pricing-heading-secondairy {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 9.6rem;
+  color: #323b49;
+}
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.container {
+  margin-bottom: 6.9rem;
+}
+.pricing-plan ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.list-item i {
+  margin-right: 1.5rem;
+  color: #3f22e6;
+  margin-bottom: 1.2rem;
+}
+
+.list {
+  color: #798ba7;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+.plan-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3f22e6;
+  letter-spacing: 0.75;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+.plan-pricing {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.plan-pricing span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+#per-year {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.sign-up-btn {
+  border: none;
+  width: 15rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 4rem;
+  cursor: pointer;
+  background-color: #452622;
+  color: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+/* End of Pricing */
 
 /* Footer */
 footer {
