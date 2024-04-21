@@ -1,0 +1,15 @@
+/* BELOW 1344pc (Smaller destop) */
+@media (max-width: 84em) {
+  .header-main {
+    max-width: 110rem;
+  }
+  .hero {
+    max-width: 110rem;
+  }
+  .hero-main-img {
+    max-width: 110rem;
+  }
+  .hero-content h1 {
+    font-size: 8rem;
+  }
+}
