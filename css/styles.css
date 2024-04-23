@@ -77,6 +77,21 @@ body::-webkit-scrollbar-track {
 
   /* background-color: red; */
 }
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  color: #092627;
+}
+
+.fa-xmark {
+  display: none;
+}
 .navbar-list li {
   list-style: none;
 }
@@ -471,12 +486,10 @@ event-content-list {
   width: 100%;
 }
 
-.hours,
-.minutes,
-.seconds {
+.times {
   color: #fff;
   margin-top: 5rem;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: bold;
 }
 /* Newsletter */
